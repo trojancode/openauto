@@ -2,8 +2,8 @@ import { CustomFetch } from "./api"
 
 export const AddUserAPI = ({ name, email }: { name: string, email: string }) => {
     return CustomFetch(<any>{
-        url: "waitinglist",
+        url: "/waitinglist",
         method: "POST",
-        body: { name, email }
+        body: JSON.stringify({ name, email })
     })
 }

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/20/solid'
+import SignupForm from '@/components/LandingPage/Form'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,13 +39,7 @@ export default function Home() {
               <h1 className='text-4xl text-gray-300 font-semibold'>Vehicle Maintenance<br /> From The Comfort of <br /> Your Home</h1>
               <p className='text-gray-300 font-light'>Open Auto Soothes the hassle of maintaining your vehicle and helps you deal with unexpected repairs worry-free.</p>
 
-              <div className=' max-w-full md:max-w-md flex flex-col gap-5'>
-                <input className=' text-gray-300 bg-transparent border-[1px] px-7 py-2 rounded-full' placeholder='Enter Your Name' />
-                <input className=' text-gray-300 bg-transparent border-[1px] px-7 py-2 rounded-full' placeholder='Enter Your Email' />
-                <button className=' text-gray-300 bg-transparent border-[1px] px-7 py-2 rounded-full'>
-                  Submit
-                </button>
-              </div>
+              <SignupForm></SignupForm>
             </div>
 
 

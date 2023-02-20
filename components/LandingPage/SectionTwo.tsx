@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../widgets/Button'
 import Footer from './Footer'
+import Image from 'next/image'
 
 const SectionTwo = () => {
     return (
@@ -8,7 +9,7 @@ const SectionTwo = () => {
             <div className=' pb-20 container px-5 pt-10 md:px-0 max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto  '>
                 <div className='mt-10 grid grid-flow-col grid-cols-1  grid-rows-2 items-center sm:grid-rows-1  sm:grid-cols-2  justify-items-center'>
                     <div className='order-last md:order-first'>
-                        <img src="/img/picku service.png" className=' max-h-96' alt="" />
+                        <Image src="/img/picku service.png" className=' max-h-96' alt="" />
                     </div>
 
                     <div className=' '>

@@ -1,12 +1,13 @@
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/20/solid'
 import React from 'react'
 import SocialMediaIcons from './SocialMediaIcons'
+import Image from 'next/image'
 
 const Footer = () => {
     return (
         <div className='  pb-10 container px-5 pt-10 md:px-0 max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto border-t-2 border-dark '>
             <div className=' flex justify-between text-center flex-col md:flex-row'>
-                <img src="/img/text_logo.svg" className='text-white h-6 mx-auto md:mx-0' alt="" />
+                <Image src="/img/text_logo.svg" className='text-white h-6 mx-auto md:mx-0' alt="" />
                 <div className='flex my-5 md:mt-0 justify-between gap-5 items-center text-sm text-gray-400'>
                     <div className='flex gap-2 align-middle items-center text-gray-400'>
                         <PhoneIcon className=' text-gray-400 h-4 w-4' />

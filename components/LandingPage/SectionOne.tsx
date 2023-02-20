@@ -3,6 +3,7 @@ import SocialMediaIcons from './SocialMediaIcons';
 import SignupForm from './Form';
 import LogoButton from '../widgets/LogoButton';
 import Header from './header';
+import Image from 'next/image';
 
 const SectionOne = () => {
     return (
@@ -22,7 +23,7 @@ const SectionOne = () => {
                         <SignupForm></SignupForm>
                     </div>
                     <div className=' h-full'>
-                        <img src="/img/Pickup_Illustration.png" className='' alt="" />
+                        <Image src="/img/Pickup_Illustration.png" className='' alt="" />
                         <SocialMediaIcons></SocialMediaIcons>
                     </div>
                 </div>

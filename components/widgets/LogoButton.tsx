@@ -1,4 +1,5 @@
 import { Transition } from '@headlessui/react'
+import Image from 'next/image'
 import React, { useState } from 'react'
 
 const LogoButton = ({ onClick }: any) => {
@@ -11,7 +12,7 @@ const LogoButton = ({ onClick }: any) => {
         }
     }
     return (
-        <img onClick={hanldeclick} src="/img/logo.svg" className={"h-7 w-7 transition ease-in-out delay-150 hover:rotate-180  "} alt="" />
+        <Image onClick={hanldeclick} src="/img/logo.svg" className={"h-7 w-7 transition ease-in-out delay-150 hover:rotate-180  "} alt="" />
 
     )
 }

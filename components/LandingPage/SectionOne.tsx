@@ -2,8 +2,9 @@ import React from 'react'
 import SocialMediaIcons from './SocialMediaIcons';
 import SignupForm from './Form';
 import LogoButton from '../widgets/LogoButton';
-import Header from './header';
+
 import Image from 'next/image';
+import Header from './Header';
 
 const SectionOne = () => {
     return (

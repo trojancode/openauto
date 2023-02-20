@@ -1,6 +1,8 @@
 import React, { Fragment, useState } from 'react'
 import { AddUserAPI } from '../repo/UserApis'
 import { Dialog, Transition } from '@headlessui/react'
+import Input from '../widgets/Input'
+import Button from '../widgets/Button'
 
 const SignupForm = () => {
     const [Data, setData] = useState<any>({})
@@ -43,11 +45,11 @@ const SignupForm = () => {
 
     return (
         <form onSubmit={onSubmit} className=' max-w-full md:max-w-md flex flex-col gap-5'>
-            <input required onChange={handleOnChange('name')} className=' text-gray-300 bg-transparent border-[1px] px-7 py-2 rounded-full' placeholder='Enter Your Name' />
-            <input required type='email' onChange={handleOnChange('email')} className=' text-gray-300 bg-transparent border-[1px] px-7 py-2 rounded-full' placeholder='Enter Your Email' />
-            <button className=' text-gray-300 bg-transparent border-[1px] px-7 py-2 rounded-full'>
+            <Input required onChange={handleOnChange('name')} placeholder='Enter Your Name' />
+            <Input required type='email' onChange={handleOnChange('email')} placeholder='Enter Your Email' />
+            <Button >
                 Submit
-            </button>
+            </Button>
 
 
             <Transition appear show={success != false} as={Fragment}>

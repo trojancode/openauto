@@ -15,7 +15,7 @@ const Header = () => {
                     <EnvelopeIcon className=' text-gray-400 h-4 w-4' />
                     service@openauto.ca
                 </div>
-                <Button className="bottom-2 font-bold">
+                <Button className="bottom-2 font-bold border-2 border-secondary">
                     Download the mobile app
                 </Button>
             </div>
